@@ -26,7 +26,7 @@ def main():
         unsafe_allow_html=True
     )
     
-    st.markdown('<span style="color: red;">Digite os valores nos campos abaixo para a avaliação do momento fletor admissível</span>', unsafe_allow_html=True)
+    st.markdown('<span style="color: red;">*Digite os valores nos campos abaixo para a avaliação do momento fletor admissível*</span>', unsafe_allow_html=True)
 
     b = st.text_input("Base da seção - b (m)", value='0.20')
     d = st.text_input("Altura útil - d (m)", value='0.50')
