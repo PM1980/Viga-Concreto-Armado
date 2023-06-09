@@ -15,7 +15,7 @@ def main():
 
     b = st.text_input("Base da seção - b (m)", value='0.20')
     d = st.text_input("Altura útil - d (m)", value='0.50')
-    Aaço = st.text_input("Área de aço (Aaço) (m2)", value ='0.000314')
+    Aaço = st.text_input("Área de aço - Aaço (m2)", value ='0.000314')
     Eaço = st.text_input("Módulo de elasticidade do aço - Eaço (GPa)", value='200')
     Econc = st.text_input("Módulo de elasticidade do concreto - Econc (GPa)", value='20')
     sigma_aço = st.text_input("Tensão admissível do aço (Pa)", value='250e6')
@@ -35,11 +35,11 @@ def main():
                 b, d, Aaço, Eaço, Econc, sigma_aço, sigma_conc
             )
 
-            st.success(f"x: {x} m")
-            st.success(f"Ieq: {Ieq} m^4")
-            st.success(f"Mconc: {Mconc} N.m")
-            st.success(f"Maço: {Maço} N.m")
-            st.success(f"Madm: {Madm} N.m")
+            st.success(f"x =  {x} m")
+            st.success(f"Ieq =  {Ieq} m^4")
+            st.success(f"Mconc =  {Mconc} N.m")
+            st.success(f"Maço =  {Maço} N.m")
+            st.success(f"Madm =  {Madm} N.m")
         except ValueError:
             st.error("Please enter valid numerical values")
 
