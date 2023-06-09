@@ -17,7 +17,7 @@ def main():
     st.markdown(
         '''
         <div style="border: 1px solid black; padding: 10px;">
-            Universidade Federal de Pernambuco - UFPE / Departamento de Engenharia Civil - DECIV
+            Universidade Federal de Pernambuco - UFPE / Departamento de Engenharia Civil - DECIV.
             Aplicativo desenvolvido para a disciplina CI219 - Resistência dos Materiais 2A
         </div>
         ''',
