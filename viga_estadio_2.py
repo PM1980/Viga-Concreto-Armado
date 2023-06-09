@@ -35,11 +35,11 @@ def main():
                 b, d, Aaço, Eaço, Econc, sigma_aço, sigma_conc
             )
 
-            st.text(f"x: {x} m")
-            st.text(f"Ieq: {Ieq} m^4")
-            st.text(f"Mconc: {Mconc} N.m")
-            st.text(f"Maço: {Maço} N.m")
-            st.text(f"Madm: {Madm} N.m")
+            st.text(f"Posição da linha neutra (x): {x} m")
+            st.text(f"Momento de inércia da seção transformada (Ieq): {Ieq} m^4")
+            st.text(f"Momento fletor admissível para o concreto: {Mconc} N.m")
+            st.text(f"Momento fletor admissível para o aço: {Maço} N.m")
+            st.text(f"Momento fletor admissível da viga: {Madm} N.m")
         except ValueError:
             st.error("Please enter valid numerical values")
 
