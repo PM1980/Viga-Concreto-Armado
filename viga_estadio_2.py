@@ -21,7 +21,7 @@ def main():
     sigma_aço = st.text_input("Tensão admissível do aço (Pa)", value='250e6')
     sigma_conc = st.text_input("Tensão admissível do concreto (Pa)", value='10e6')
 
-    if st.button("Calculate"):
+    if st.button("Calcular"):
         try:
             b = float(b)
             d = float(d)
