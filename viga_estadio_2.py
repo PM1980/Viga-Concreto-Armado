@@ -57,9 +57,9 @@ def main():
             st.text(f"Momento fletor admissível da viga: {Madm} N.m")
             
             if Mconc < Maço:
-                st.text("Concreto governa o problema")
+                st.markdown("**Concreto governa o problema**")
             else:
-                st.text("Aço governa o problema")
+                st.markdown("**Aço governa o problema**")
             
         except ValueError:
             st.error("Please enter valid numerical values")
