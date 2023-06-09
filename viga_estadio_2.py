@@ -11,7 +11,7 @@ def calculate_moment_of_resistance(b, d, Aaço, Eaço, Econc, sigma_aço, sigma_
 
 def main():
     st.title("Verificação de vigas em concreto armado no Estádio II - Resistência dos Materiais 2")
-    st.markdown("![Google Drive Image](https://drive.google.com/file/d/1GUNQ24DweYWPeBlrcpjwQMkFnuo7VyAv/view?usp=sharing)", width=400)
+    st.markdown("![Google Drive Image](https://drive.google.com/file/d/1GUNQ24DweYWPeBlrcpjwQMkFnuo7VyAv/view?usp=sharing)")
     st.write("Insira os valores para a avaliação do momento fletor admissível")
 
     b = st.text_input("Base da seção - b (m)", value='0.20')
