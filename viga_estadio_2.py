@@ -11,11 +11,14 @@ def calculate_moment_of_resistance(b, d, Aaço, Eaço, Econc, sigma_aço, sigma_
     return x, Ieq, Mconc, Maço, Madm
 
 def main():
-    st.title("Calculadora para verificação de vigas em concreto armado no Estádio II")
+    st.title("Calculadora para verificação de vigas em concreto armado no Estádio II - seção retangular")
     img = Image.open("secao_homogenea_concreto.png")
     st.image(img)
+    st.write("Universidade Federal de Pernambuco - UFPE / Departamento de Engenharia Civil - DECIV")
     st.write("Aplicativo desenvolvido para a disciplina CI219 - Resistência dos Materiais 2")
-    st.markdown('<span style="color: red;">This is red text.</span>', unsafe_allow_html=True)
+    st.write("Autor: Paulo M. V. Ribeiro")
+    st.write("Data: 06/2023")
+    st.markdown('<span style="color: red;">Digite os valores nos campos abaixo para a avaliação do momento fletor admissível</span>', unsafe_allow_html=True)
 
     b = st.text_input("Base da seção - b (m)", value='0.20')
     d = st.text_input("Altura útil - d (m)", value='0.50')
