@@ -10,8 +10,8 @@ def calculate_moment_of_resistance(b, d, Aaço, Eaço, Econc, sigma_aço, sigma_
     return x, Ieq, Mconc, Maço, Madm
 
 def main():
-    st.title("Verificação de vigas em concreto armado no Estádio II")
-    st.write("Insira os valores para avaliação do momento admissível")
+    st.title("Verificação de vigas em concreto armado no Estádio II - Resistência dos Materiais 2")
+    st.write("Insira os valores para a avaliação do momento fletor admissível")
 
     b = st.text_input("Base da seção - b (m)", value='0.20')
     d = st.text_input("Altura útil - d (m)", value='0.50')
