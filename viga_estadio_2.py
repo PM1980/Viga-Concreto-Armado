@@ -19,6 +19,8 @@ def main():
         <div style="border: 1px solid black; padding: 10px;">
             Universidade Federal de Pernambuco - UFPE / Departamento de Engenharia Civil - DECIV <br>
             Aplicativo desenvolvido para a disciplina CI219 - Resistência dos Materiais 2A <br>
+            Autor: Paulo M. V. Ribeiro <br>
+            Data: 06/2023
         </div>
         ''',
         unsafe_allow_html=True
