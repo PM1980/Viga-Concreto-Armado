@@ -14,8 +14,17 @@ def main():
     st.title("Calculadora para verificação de vigas em concreto armado no Estádio II - seção retangular")
     img = Image.open("secao_homogenea_concreto.png")
     st.image(img)
+    st.markdown(
+        '''
+        <div style="border: 1px solid black; padding: 10px;">
+            Universidade Federal de Pernambuco - UFPE / Departamento de Engenharia Civil - DECIV
+            Aplicativo desenvolvido para a disciplina CI219 - Resistência dos Materiais 2A
+        </div>
+        ''',
+        unsafe_allow_html=True
+    )
     st.write("Universidade Federal de Pernambuco - UFPE / Departamento de Engenharia Civil - DECIV")
-    st.write("Aplicativo desenvolvido para a disciplina CI219 - Resistência dos Materiais 2")
+    st.write("Aplicativo desenvolvido para a disciplina CI219 - Resistência dos Materiais 2A")
     st.write("Autor: Paulo M. V. Ribeiro")
     st.write("Data: 06/2023")
     st.markdown('<span style="color: red;">Digite os valores nos campos abaixo para a avaliação do momento fletor admissível</span>', unsafe_allow_html=True)
