@@ -10,16 +10,16 @@ def calculate_moment_of_resistance(b, d, Aaço, Eaço, Econc, sigma_aço, sigma_
     return x, Ieq, Mconc, Maço, Madm
 
 def main():
-    st.title("Moment of Resistance Calculator")
-    st.write("Enter the values to calculate the moment of resistance")
+    st.title("Verificação de vigas em concreto armado no Estádio II")
+    st.write("Insira os valores para avaliação do momento admissível")
 
-    b = st.text_input("Base of the section (m)", value='0.20')
-    d = st.text_input("Effective height of the section (m)", value='0.50')
-    Aaço = st.text_input("Total area of reinforcement (m2)")
-    Eaço = st.text_input("Elastic modulus of steel (GPa)", value='200')
-    Econc = st.text_input("Elastic modulus of concrete (GPa)", value='20')
-    sigma_aço = st.text_input("Allowable stress for steel (Pa)", value='250e6')
-    sigma_conc = st.text_input("Allowable stress for concrete (Pa)", value='10e6')
+    b = st.text_input("Base da seção - b (m)", value='0.20')
+    d = st.text_input("Altura útil - d (m)", value='0.50')
+    Aaço = st.text_input("Área de aço (Aaço) (m2)", value ='0.000314')
+    Eaço = st.text_input("Módulo de elasticidade do aço - Eaço (GPa)", value='200')
+    Econc = st.text_input("Módulo de elasticidade do concreto - Econc (GPa)", value='20')
+    sigma_aço = st.text_input("Tensão admissível do aço (Pa)", value='250e6')
+    sigma_conc = st.text_input("Tensão admissível do concreto (Pa)", value='10e6')
 
     if st.button("Calculate"):
         try:
