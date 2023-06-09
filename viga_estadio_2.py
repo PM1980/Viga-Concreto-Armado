@@ -35,11 +35,11 @@ def main():
                 b, d, Aaço, Eaço, Econc, sigma_aço, sigma_conc
             )
 
-            st.success(f"x =  {x} m")
-            st.success(f"Ieq =  {Ieq} m^4")
-            st.success(f"Mconc =  {Mconc} N.m")
-            st.success(f"Maço =  {Maço} N.m")
-            st.success(f"Madm =  {Madm} N.m")
+            st.text(f"x: {x} m")
+            st.text(f"Ieq: {Ieq} m^4")
+            st.text(f"Mconc: {Mconc} N.m")
+            st.text(f"Maço: {Maço} N.m")
+            st.text(f"Madm: {Madm} N.m")
         except ValueError:
             st.error("Please enter valid numerical values")
 
