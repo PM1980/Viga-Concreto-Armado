@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 def calculate_moment_of_resistance(b, d, Aaço, Eaço, Econc, sigma_aço, sigma_conc):
     n = Eaço / Econc
