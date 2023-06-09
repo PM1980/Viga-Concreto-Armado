@@ -15,7 +15,7 @@ def main():
     img = Image.open("secao_homogenea_concreto.png")
     st.image(img)
     st.write("Aplicativo desenvolvido para a disciplina CI219 - Resistência dos Materiais 2")
-    st.write("Insira os valores nos campos abaixo para a avaliação do momento fletor admissível")
+    st.markdown("*Insira os valores nos campos abaixo para a avaliação do momento fletor admissível*")
 
     b = st.text_input("Base da seção - b (m)", value='0.20')
     d = st.text_input("Altura útil - d (m)", value='0.50')
